@@ -10,67 +10,48 @@
 <img src="image/pigeon.png" width=100 height=100 alt="ハト">
 ロジック勉強記録．
 
-質問など問い合わせは<a href="https://docs.google.com/forms/d/e/1FAIpQLSc_3MjdXX2mltt9qCCyt6ZLjYTCKNfDJ5odb69PhRCgjHViyw/viewform?usp=sf_link">こちら</a>のGoogleフォームから気軽にどうぞ．
-
-
-<section>
-<h3>一階ペアノ算術のモデル理論</h3>  
-
-<p>Richard Kayeの``Models of Peano Arithmetic''を14章まで読んだので，道中で躓いた点や感想などを著作権侵害に気をつけて書いていきます．また，少しですが演習問題の解答も載せておきます．
-<a href="firstorderPA.html"> Models of Peano Arithmeticの各章の感想など</a>
-</p>     
-</section>
+質問や疑義などの問い合わせは<a href="https://docs.google.com/forms/d/e/1FAIpQLSc_3MjdXX2mltt9qCCyt6ZLjYTCKNfDJ5odb69PhRCgjHViyw/viewform?usp=sf_link">こちら</a>のGoogleフォームから気軽にどうぞ．
 
 <section>
-<h3>二階算術のモデル理論</h3>  
-   今読んでいるStephen G. Simpson "Subsystems of
-   Second Order Arithmetic"において，少し分かりづらいと感じた内容を書いていきます．
+<h3>二階算術関連</h3>  
+<li> <a href="Ssoa.html"> Stephen G. Simpson，"Subsystems of Second Order Arithmetic"の分かりづらいと感じた内容など</a></li>
+<p>
+ 躓いた箇所や現在でも理解できていないことなどを書いています．
+</p>
+<p>
+もしあなたがこの本を読み始めようと思ってらっしゃるなら，@IE50 testさんが書かれた<a href="https://ie50.hatenablog.com/entry/2022/12/07/003914">こちらの記事</a>が非常に参考になるかと思います．
+</p>
+<li><a href="contents/L2formlaprenexnormalfom.pdf">二階算術の論理式に対する冠頭標準形定理
+</a>
+</li>
+<li><a href="contents/2022Wakatenokai.pdf">Turing ジャンプからはじめる二階算術のωモデル論[2022年度数学基礎論若手の会発表スライド]</a></li>
+<li><a href="contents/Turing_functional.pdf">RCA_0 上で動作する Turing functional を作る[Mathematical Logic Advent Calendar 2022の17日目の記事]</a></li>
 <!-- <li><a href="contents/nomalformtheorem.pdf">
 Theorem II.2.7 (nomal form theorem)</a>
 <p>テキストにはクリーネの正規形定理に言及がありますが，証明に計算論らしさはありません．
 </li> -->
 
-<li>Theorem II.8.10証明中， RCA_0がcut-freeな証明システムを扱えること．</li>
-<p>まだ確証を得られていません．いわゆるLKなどをRCA_0上でコード化してカット除去を示せばよいと思うのですが，ちゃんと証明をするのは大変そうです．調べたところ
-    Petr Hájek, Pavel Pudlák"Metamathematics of First-Order Arithmetic" のChapter V（projecteuclid.orgに落ちています）が良さそうですので，いつか確認したいと思っています．</li>
-
-
-<li><a href="contents/ATR_0.pdf">
-    算術的超限再帰公理を表す論理式</a></li>
-<p>ATR_0はテキスト中で若干インフォーマルに定義されていてはじめは困ったので形式化したそれを置いておきます． 
-</li>
-
-<li><a href="contents/universalPi01.pdf">普遍 light face Π<sup>0</sup><sub>1</sub> 論理式</a></li>
-<p>
-
-<li>βモデルがΠ<sup>1</sup><sub>∞</sub>-TI<sub>0</sub> のモデルになること</li>
-<p>Lemma VII.2.15の上で説明されていましたが，これはメタ（ZFCなど）の帰納法を使えばよいです．
-</li>
-
-<li>VII.3節のTheorem3.27以降</li>
-<p>証明がすこし省略されすぎているように思います．TheoremVII.3.29とVII.3.31（＋α）からATR<sub>0</sub>のモデルの圏（射はΣ<sub>1</sub><sup>1</sup>埋め込み）とATR<sub>0</sub><sup>set</sup>の圏（射は推移的埋め込み）が同値であることが従います．そのうちPDFを作るかも知れません．
-</li>
-
-<li>VII.4節</li>
-<p>Thoerem VII.4.8が成り立つと思えません．誰か助けて．</li>
-
 
 </section>
+<section>
+<h3>一階ペアノ算術関連</h3>  
+    <li> <a href="firstorderPA.html"> Richard Kaye，"Models of Peano Arithmetic"の各章の感想など</a></li> 
+    これはこの本を読んでいて筆者が躓いた箇所や，はじめに知っていればもっと楽だったのに，と感じた内容をまとめものです．一点注意としては，このKaye本は私がはじめて読んだロジックの専門書なので今（上の記事を書いてから1年後くらいです）からすると自明だと感じることや，ちょっと冗長に書いているなと思う箇所もあるのですが，勉強当時の感覚というのも大切だと思うのでそのまま残しています．
 
+<li><a href="contents/Presentation.pdf">一階ペアノ算術におけるラムゼー型組合せ論的命題のモデル理論を用いた独立性証明[卒論発表スライド]</a></li>
+<li><a href="contents/強強原子再帰関数列inPRA.pdf">任意の原始再帰関数をどこかのg_nで支配できる原始再帰関数列{g_n}n∈ω の構成とその証明in PRA</a></li>
+</section>
 <section>
 <h3>計算可能性理論</h3>  
-    何か書く．
+日本語の（ごろ寝しながら読める）文献が見つからなくで困っている最中なので，そのうち構成可能順序数・計算可能無限論理式・超算術的集合などについてまとまったものを書きたいと思っています．
 </section>
 
 <section>
 <h3> miscellaneous</h3>  
  <ul>
 <!-- <li><a href="SSOAexercise.html">"Subsystems of Second Order Arithmetic"Exercise の解答</a></li> 書くモチベーションが微妙なため一時閉鎖--> 
-<li><a href="contents/L2formlaprenexnormalfom.pdf">二階算術の論理式に対する冠頭標準形定理
-</a>
-</li>
-<li><a href="contents/Presentation.pdf">一階ペアノ算術におけるラムゼー型組合せ論的命題のモデル理論を用いた独立性証明[卒論発表スライド]</a>
-</li>
+
+
 <!-- <li><a href="contents/limitordinal.pdf"> 極限順序数が絡む和</a></li> -->
 </ul>     
 </section>
